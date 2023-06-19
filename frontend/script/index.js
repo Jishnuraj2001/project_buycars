@@ -12,7 +12,7 @@ register.addEventListener("submit",(event)=>{
 
 async function userRegisterFn(obj){
     try {
-        let res=await fetch(`http://localhost:3200/register`,{
+        let res=await fetch(`https://buycar-backend-j259.onrender.com/register`,{
             method:"POST",
             headers:{
                 "Content-Type":"Application/json"

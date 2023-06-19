@@ -10,7 +10,7 @@ login.addEventListener("submit",(event)=>{
 
 async function userLoginFn(obj){
     try {
-        let res=await fetch(`http://localhost:3200/login`,{
+        let res=await fetch(`https://buycar-backend-j259.onrender.com/login`,{
             method:"POST",
             headers:{
                 "Content-Type":"Application/json"

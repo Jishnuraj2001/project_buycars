@@ -6,7 +6,7 @@ getAllCarsFn();
 
 async function getAllCarsFn(){
     try {
-        let res=await fetch("http://localhost:3200/allcars");
+        let res=await fetch("https://buycar-backend-j259.onrender.com/allcars");
         let fin=await res.json();
         if(res.status==200){
             renderCarsFn(fin.data);
@@ -54,7 +54,7 @@ function renderCarsFn(array){
 
 async function deleteCarFn(id){
     try {
-        let res=await fetch(`http://localhost:3200/deletecar/${id}`,{
+        let res=await fetch(`https://buycar-backend-j259.onrender.com/deletecar/${id}`,{
             method:"DELETE",
             headers:{
                 "Content-Type":"Application/json",

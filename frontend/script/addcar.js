@@ -18,7 +18,7 @@ addcar.addEventListener("submit",(event)=>{
 
 async function addCarFn(obj){
     try {
-        let res=await fetch(`http://localhost:3200/addcar`,{
+        let res=await fetch(`https://buycar-backend-j259.onrender.com/addcar`,{
             method:"POST",
             headers:{
                 "Content-Type":"Application/json",
