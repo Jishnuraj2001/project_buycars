@@ -5,7 +5,7 @@ const authorizer=(role_array)=>{
         if(role_array.includes(role)){
             next();
         }else{
-            res.send("You are not Authorized");
+            res.status(404).json({"msg":"You are not Authorized"});
         }
     }
 }

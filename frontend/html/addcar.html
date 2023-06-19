@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add car page</title>
+    <link rel="stylesheet" href="../style/addcar.css">
+</head>
+<body>
+    <header>
+        <div class="logo">BUYCARS</div>
+        <input type="checkbox" id="hamburger">
+        <label class="hamburger" for="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+        <nav class="navbar">
+            <ul>
+                <li class="list"><a class="anchor" href="../index.html">SIGNUP</a></li>
+                <li class="list"><a class="anchor" href="./login.html">LOGIN</a></li>
+                <li class="list"><a class="anchor" href="./addcar.html">ADD CAR</a></li>
+                <li class="list"><a class="anchor" href="./salecar.html">CARS FOR SALE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Add Car</h1>
+
+    <form id="addcar_form">
+        <input type="text" name="brand" id="brand" required placeholder="Enter Brand">
+        <input type="text" name="model_name" id="model_name" required placeholder="Enter Model Name">
+        <input type="number" name="model_year" id="model_year" required placeholder="Enter Model Year">
+        <input type="text" name="color" id="color" required placeholder="Enter Color">
+        <input type="number" name="odometer_km" id="odometer_km" required placeholder="Enter Odometer KM">
+        <input type="number" name="major_accidents" id="major_accidents" required placeholder="Enter Number of Major Accidents">
+        <input type="number" name="previous_owners" id="previous_owners" required placeholder="Enter Number of Previous Owners">
+        <input type="text" name="registration_place" id="registration_place" required placeholder="Enter Registration Place">
+        <textarea name="description" id="description" cols="30" rows="10" required placeholder="Enter Description"></textarea>
+        <input type="text" name="image" id="image" required placeholder="Enter Image URL">
+
+        <input class="btn" type="submit" value="Add">
+    </form>
+
+
+</body>
+</html>
+<script src="../script/addcar.js"></script>

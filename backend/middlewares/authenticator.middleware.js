@@ -11,7 +11,7 @@ const authenticator=async(req,res,next)=>{
                     req.body.userRole=decoded.userRole;
                     next();
                 }else{
-                    res.status(404).json({"msg":"something went wrong with authentication"});
+                    res.status(404).json({"msg":"Please login first!!"});
                 }
               });
         }else{

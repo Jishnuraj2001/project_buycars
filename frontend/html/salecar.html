@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sale car age</title>
+    <link rel="stylesheet" href="../style/salecar.css">
+</head>
+<body>
+    <header>
+        <div class="logo">BUYCARS</div>
+        <input type="checkbox" id="hamburger">
+        <label class="hamburger" for="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+        <nav class="navbar">
+            <ul>
+                <li class="list"><a class="anchor" href="../index.html">SIGNUP</a></li>
+                <li class="list"><a class="anchor" href="./login.html">LOGIN</a></li>
+                <li class="list"><a class="anchor" href="./addcar.html">ADD CAR</a></li>
+                <li class="list"><a class="anchor" href="./salecar.html">CARS FOR SALE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Sale Car</h1>
+
+    <div id="cars_container">
+        <div class="car_box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIuH3VFvrFI0XJgmv3yroFSQhTu510uw7yUA&usqp=CAU" alt="car image" width="100%" height="300px">
+            <div class="brand">Brand :</div>
+            <div class="model_name">Model Name :</div>
+            <div class="model_year">Model year :</div>
+            <div class="odometer_km">Odometer KM :</div>
+            <div class="major_accidents">Accident History :</div>
+            <div class="previous_owners">Previous Owners :</div>
+            <div class="registration_place">Regitration Place :</div>
+            <div class="description"></div>
+            <button class="delete" data-id="">DELETE</button>
+            <button class="edit" data-id="">EDIT</button>
+        </div>
+    </div>
+</body>
+</html>
+<script src="../script/salecar.js"></script>

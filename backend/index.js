@@ -7,11 +7,13 @@ app.use(cors());
 
 const { connection } = require("./config/db");
 const { userRouter } = require("./routes/user.router");
+const {inventoryRouter}=require("./routes/inventory.router");
 
 app.get("/", (req, res) => {
     res.send("Basic API endpoint for Buycars.com");
 })
 app.use("/", userRouter);
+app.use("/",inventoryRouter);
 
 app.listen(process.env.port, async () => {
     try {
