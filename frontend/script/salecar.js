@@ -46,7 +46,29 @@ function renderCarsFn(array){
     for(let delete_btn of all_delete_btns){
         delete_btn.addEventListener("click",(event)=>{
             event.preventDefault();
-            alert("voiii");
+            let id=event.target.dataset.id;
+            deleteCarFn(id);
         })
+    }
+}
+
+async function deleteCarFn(id){
+    try {
+        let res=await fetch(`http://localhost:3200/deletecar/${id}`,{
+            method:"DELETE",
+            headers:{
+                "Content-Type":"Application/json",
+                authorization:sessionStorage.getItem("car_token")
+            }
+        })
+        let fin=await res.json();
+        if(res.status==202){
+            alert(fin.msg);
+            window.location.href="../html/salecar.html";
+        }else{
+            alert(fin.msg);
+        }
+    } catch (error) {
+        alert("unable to delete car data");
     }
 }
